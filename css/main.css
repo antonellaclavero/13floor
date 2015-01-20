@@ -5,22 +5,26 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body {
 	font-family: 'Source Sans Pro', sans-serif
 }
-/*layout*/
-header {
-	opacity: .99;
-	background: #1b1f23;
-	display: table;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	margin-left: -10vw;
+
+/*full screen cover background*/
+.intro-holder {
+  background: transparent url("../images/background.jpg") center top no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: table;
+  overflow: hidden;
 }
-/*background img*/
-header {
-	background: url("../images/background.jpg");
-	background-size: cover;
-	background-position: center center;
+.intro {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
+header img {
+	float: left;
+	margin: 3em 1em 1em 2em;
+}
+
 /*nav*/
 nav ul {
 	text-align: right;
@@ -36,15 +40,10 @@ header h1 {
 	font-size: 1.1em;
 	color: #ccc;
 	text-transform: uppercase;
-	margin-bottom: 2em;
+	/*margin-bottom: 2em;*/
 }
 header p {
 	font-size: 2.2em;
 	color: #ffffff;
-	margin: 1em 5em 0em
-}
-
-header h1,
-p {
-	text-align: center;
+	/*margin: 1em 5em 0em*/
 }
